@@ -15,3 +15,5 @@ Use 'make clean' to delete the 'builds' directory with all it's contents.
 IMPORTANT: Make is required to use the make file. It comes with most compilers and is added to the path with it. But it won't be called 'make' in most cases so you need to rename it or run it with it's name. 
 
 I haven't added any comments yet. Will do soon though. It took a lot of time to write and understand these. Will add coprehensive comments as soon as I get some time.
+
+Also feel free to create a PR if you find any improvemets.

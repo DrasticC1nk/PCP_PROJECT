@@ -158,6 +158,7 @@ int main(int argc, char *argv[])
 {
     int numThreads = stoi(argv[1]);
 
+    //CONCURRENCY FAILS FOR numSTMObjects > 1
     int numSTMObjects = 2;
 
     vector<unique_ptr<STMObject>> objects;

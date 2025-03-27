@@ -1,52 +1,42 @@
-Running stm0.exe... 
----------------------------------- 
-Total successful transactions: 12860608
+Running stm0.exe with argument 5... 
+----------------------------------  
+Total successful transactions: 16322694
 Final STM state:
-  Data[0] = 8425051
-  Data[1] = 8347800
-  Version = 25721216
-Time taken: 5.01658 seconds
-Transactions per second: 2.56362e+06
+  Data[0] = 14366602
+  Data[1] = 14362921
+  Version = 32645388
+Time taken: 5.00006 seconds
+Transactions per second: 3.2645e+06
  
-Running stm1.exe... 
----------------------------------- 
+Running stm1.exe with argument 5... 
+----------------------------------  
 Thread 0 finished.
-Thread 8 finished.
-Thread 7 finished.
-Thread 5 finished.
-Thread 9 finished.
-Thread 14 finished.
-Thread 12 finished.
-Thread 6 finished.
-Thread 10 finished.
 Thread 2 finished.
-Thread 15 finished.
+Thread 4 finished.
 Thread 3 finished.
 Thread 1 finished.
-Thread 4 finished.
-Thread 11 finished.
-Thread 13 finished.
 
 Final STM state:
-  Object 0: value = 16000, version = 16000
-  Object 1: value = 16000, version = 16000
-Time taken: 0.0381067 seconds
+  Object 0: value = 5000, version = 5000
+  Object 1: value = 5000, version = 5000
+Time taken: 0.0139461 seconds
  
 Running stm2.exe with argument 5... 
----------------------------------- 
+----------------------------------  
 Final STM state:
   Object 0: value = 5000
   Object 1: value = 5000
-Time taken: 0.0003345 seconds
+Time taken: 0.0011571 seconds
  
 Running stm3.exe with argument 5... 
----------------------------------- 
+----------------------------------  
 Thread 0 finished.
-Thread 4 finished.
-Thread 2 finished.
 Thread 1 finished.
+Thread 2 finished.
 Thread 3 finished.
+Thread 4 finished.
 Final value for object 0: 5000
-Time taken: 0.0044039 seconds
-Transactions per second: 1.13536e+06
+Final value for object 1: 6378
+Time taken: 0.0111498 seconds
+Transactions per second: 448439
  

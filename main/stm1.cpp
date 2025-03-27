@@ -157,9 +157,9 @@ void transactionalWork(int threadId, vector<STMObject*>& objects, int numTransac
     cout << "Thread " << threadId << " finished." << endl;
 }
 
-int main() 
+int main(int argc, char *argv[]) 
 {
-    int numThreads = thread::hardware_concurrency();
+    int numThreads = stoi(argv[1]);
 
     int numSTMObjects = 2;
 

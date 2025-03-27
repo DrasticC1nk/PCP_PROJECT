@@ -6,20 +6,12 @@ set LOG_FILE=run_log.txt
 
 if exist %LOG_FILE% del %LOG_FILE%
 
-set EXE_LIST=stm0 stm1
-set EXE_LIST_WITH_ARG=stm2 stm3
+set EXE_LIST=stm0 stm1 stm2 stm3
 
 for %%E in (%EXE_LIST%) do (
-    echo Running %%E.exe... >> %LOG_FILE%
-    echo ---------------------------------- >> %LOG_FILE%
-    %BUILD_DIR%\%%E.exe >> %LOG_FILE% 2>&1
-    echo. >> %LOG_FILE%
-)
-
-for %%E in (%EXE_LIST_WITH_ARG%) do (
     echo Running %%E.exe with argument 5... >> %LOG_FILE%
-    echo ---------------------------------- >> %LOG_FILE%
-    %BUILD_DIR%\%%E.exe 5 >> %LOG_FILE% 2>&1 ::CHANGE THE ARGUMENT HERE
+    echo ---------------------------------- >> %LOG_FILE% 
+    %BUILD_DIR%\%%E.exe 5 >> %LOG_FILE% 2>&1
     echo. >> %LOG_FILE%
 )
 

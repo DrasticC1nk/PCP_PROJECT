@@ -51,11 +51,11 @@ public:
     }
 };
 
-int main() 
+int main(int argc, char *argv[]) 
 {
-    STM stm;
+    int numThreads = stoi(argv[1]);
 
-    const int numThreads = thread::hardware_concurrency();
+    STM stm;
 
     atomic<bool> stop{false};
     atomic<long long> totalOps{0};
